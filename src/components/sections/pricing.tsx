@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 const plans = [
   {
     name: "Standart",
-    price: "150 000",
+    price: "149 990",
     description: "Guruh bilan birga o'rganish",
     features: [
       "Barcha video darslar",
@@ -20,7 +20,7 @@ const plans = [
   },
   {
     name: "Pro Max",
-    price: "200 000",
+    price: "199 990",
     description: "Individual dars va maksimal natija",
     features: [
       "Haftada 4 marta jonli video dars",
