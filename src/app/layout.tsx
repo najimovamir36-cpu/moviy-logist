@@ -20,6 +20,10 @@ export const metadata: Metadata = {
     "onlayn kurs",
     "Moviy Logist",
   ],
+  icons: {
+    icon: "/logo.webp",
+    apple: "/logo.webp",
+  },
   openGraph: {
     title: "Moviy Logist — Logistika va dispatcherlik kursi",
     description:
