@@ -53,7 +53,7 @@ export function Hero() {
             variants={item}
             className="mt-7 text-4xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-7xl"
           >
-            Logistika va dispatcherlikni{" "}
+            Logistikani{" "}
             <span className="text-gradient-gold">0 dan</span> o'rganing.
           </motion.h1>
 
