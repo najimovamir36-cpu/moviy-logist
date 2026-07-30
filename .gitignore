@@ -10,3 +10,6 @@ npm-debug.log*
 /coverage
 next-env.d.ts
 /prisma/dev.db
+
+.vercel
+.env*
