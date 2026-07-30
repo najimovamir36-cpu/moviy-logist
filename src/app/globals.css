@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Qora + tilla (black & gold) luxury theme */
+    --background: 0 0% 4%;
+    --foreground: 40 30% 96%;
+
+    --card: 0 0% 7%;
+    --card-foreground: 40 30% 96%;
+
+    --primary: 43 62% 52%;
+    --primary-foreground: 0 0% 5%;
+
+    --secondary: 0 0% 9%;
+    --secondary-foreground: 40 30% 96%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 40 10% 62%;
+
+    --accent: 43 40% 14%;
+    --accent-foreground: 43 62% 62%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 14% 18%;
+    --input: 40 14% 18%;
+    --ring: 43 62% 52%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  ::selection {
+    @apply bg-primary/30 text-foreground;
+  }
+}
+
+@layer components {
+  .glass {
+    background: rgba(12, 12, 12, 0.7);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+  }
+
+  .glass-dark {
+    background: rgba(5, 5, 5, 0.72);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #f5e6b8 0%, #c9a227 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Tilla gradient (gold) — kept the same name to avoid churn */
+  .text-gradient-blue {
+    background: linear-gradient(135deg, #e7c96a 0%, #b8860b 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #f6e7b2 0%, #c9a227 55%, #8a6d1f 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .section {
+    @apply py-24 md:py-32;
+  }
+
+  .grid-pattern {
+    background-image: radial-gradient(
+      circle at 1px 1px,
+      rgba(201, 162, 39, 0.12) 1px,
+      transparent 0
+    );
+    background-size: 32px 32px;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(40 14% 22%);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(43 40% 32%);
+}
