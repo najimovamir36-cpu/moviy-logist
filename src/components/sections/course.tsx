@@ -7,6 +7,7 @@ const points = [
   "Logistika va dispatcherlikni o'rganish uchun amaliy kurs.",
   "Darslar sodda va tushunarli tarzda olib boriladi.",
   "Kurs davomida real ish jarayonlari bilan tanishasiz.",
+  "3 kundan 7 kungacha birinchi daromadingizni oling.",
 ];
 
 const modules = [
